@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ChipView">
+        <attr name="cv_radius" format="dimension" />
+        <attr name="cv_defColor" format="color" />
+        <attr name="cv_isSelected" format="boolean" />
+        <attr name="cv_isGroupModeEnable" format="boolean" />
+        <attr name="cv_strokeWidth" format="dimension" />
+    </declare-styleable>
+</resources>

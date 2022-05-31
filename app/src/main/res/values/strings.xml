@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Bitex Challenge</string>
+
+    <string name="fragment_exchange">Exchange</string>
+    <string name="fragment_margin">Margin</string>
+    <string name="fragment_futures">Futures</string>
+
+    <string name="cross">Cross</string>
+    <string name="multiply">8 X</string>
+    <string name="funding_rate">Funding Rate</string>
+    <string name="next_payment_in">Next Payment In</string>
+    <string name="rate">0.0100%</string>
+    <string name="time">07:02:24</string>
+    <string name="price_usdt">Price (USDT)</string>
+    <string name="amount_btc">Amount (BTC)</string>
+    <string name="seller_price">7,887.53</string>
+    <string name="seller_amount">0.234</string>
+    <string name="buyer_price">7,885.33</string>
+    <string name="buyer_amount">1.95</string>
+    <string name="sell">Sell</string>
+    <string name="buy">Buy</string>
+    <string name="limit_order">Limit Order</string>
+    <string name="available">Available</string>
+    <string name="_1_13_usdt">1.13 USDT</string>
+    <string name="decrease">-</string>
+    <string name="increases">+</string>
+    <string name="reduce_only">Reduce Only</string>
+    <string name="post_only">Post Only</string>
+    <string name="cost">cost</string>
+    <string name="cost_usdt">0 USDT</string>
+    <string name="buy_long">Buy/Long</string>
+    <string name="_2">2</string>
+    <string name="default_text">Default</string>
+</resources>
