@@ -66,10 +66,10 @@
             android:textColor="@color/yellow"
             android:textSize="@dimen/text_normal"
             app:drawableEndCompat="@drawable/ic_baseline_keyboard_arrow_down_24"
+            app:drawableTint="@color/colorAccent"
             app:layout_constraintBottom_toBottomOf="@+id/crossText"
             app:layout_constraintStart_toEndOf="@+id/crossText"
-            app:layout_constraintTop_toTopOf="@+id/crossText"
-            app:drawableTint="@color/colorAccent" />
+            app:layout_constraintTop_toTopOf="@+id/crossText" />
 
         <View
             android:id="@+id/view"
@@ -169,6 +169,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/padding"
             android:paddingBottom="@dimen/padding"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="@+id/amountText"
             app:layout_constraintStart_toStartOf="@+id/priceText"
             app:layout_constraintTop_toBottomOf="@+id/priceText"
@@ -224,6 +225,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/padding"
             android:paddingBottom="@dimen/padding"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="@+id/amountText"
             app:layout_constraintStart_toStartOf="@+id/priceText"
             app:layout_constraintTop_toBottomOf="@+id/lineView2"
@@ -411,6 +413,7 @@
             android:id="@+id/userSelectedAmountEt"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:inputType="number"
             android:background="@drawable/bg_border_gray"
             android:gravity="center"
             android:hint="@string/amount_btc"
@@ -486,6 +489,7 @@
             app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
         <Button
+            android:id="@+id/buyingBtn"
             style="@style/DefBtn.Primary"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -493,6 +497,16 @@
             app:layout_constraintEnd_toEndOf="@id/costText"
             app:layout_constraintStart_toStartOf="@id/costTitle"
             app:layout_constraintTop_toBottomOf="@id/costText" />
+
+        <ProgressBar
+            android:id="@+id/loading"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintStart_toStartOf="@id/buyingBtn"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@id/buyingBtn"
+            app:layout_constraintEnd_toEndOf="@id/buyingBtn"
+            app:layout_constraintBottom_toBottomOf="@id/buyingBtn"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
